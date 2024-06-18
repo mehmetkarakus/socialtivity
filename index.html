@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Globe Trekk - HTML Traveling Template" />
+
+    <title>SocialTivity</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png" />
+
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="path/to/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/vendor/all.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="assets/css/vendor/slick.css" />
+    <link rel="stylesheet" href="assets/css/vendor/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  </head>
+
+  <body id="body" class="x-hidden ui-transition">
+    <div id="preloader">
+      <div class="loader">
+        <div class="plane">
+          <img src="assets/media/icons/loader-plane.png" class="plane-img" alt="" />
+        </div>
+        <div class="earth-wrapper">
+          <div class="earth"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="scroll-wrapper">
+      <div id="smooth-content">
+        <main>
+          <header id="ui-header">
+            <div class="ui-header-inner container-fluid header--gr">
+              <div class="ui-header-col">
+                <div class="ui-logo">
+                  <a href="index.html" class="header--logo">
+                    <img src="assets/media/logo.png" class="ui-logo-light" alt="Logo" />
+                    <img src="assets/media/logo-dark.png" class="ui-logo-dark" alt="Logo" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="topbar">
+                <div class="city--weather__day weather--gr">
+                  <div class="weather--city__name">
+                    <h2 class="city--name">Manisa</h2>
+                  </div>
+                  <div id="weather-container"></div>
+                </div>
+              </div>
+
+              <div class="ui-header-col">
+                <nav class="ui-overlay-menu ui-ol-menu-center ui-ol-menu-count">
+                  <div class="ui-ol-menu-holder">
+                    <div class="ui-ol-menu-inner ui-wrap">
+                      <div class="">
+                        <div class="container-fluid">
+                          <div class="ui-ol-menu-content">
+                            <ul class="ui-ol-menu-list">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html">About Us</a></li>
+
+                              <li class="ui-ol-submenu-wrap">
+                                <div class="ui-ol-submenu-trigger">
+                                  <a href="#">Tours</a>
+                                  <div class="ui-ol-submenu-caret-wrap">
+                                    <div class="ui-ol-submenu-caret"></div>
+                                  </div>
+                                </div>
+                                <div class="ui-ol-submenu">
+                                  <ul class="ui-ol-submenu-list">
+                                    <li class="ui-ol-submenu-wrap">
+                                      <div class="ui-ol-submenu-trigger">
+                                        <a href="#" class="ui-ol-submenu-link">Tour Lists</a>
+                                        <div class="ui-ol-submenu-caret-wrap">
+                                          <div class="ui-ol-submenu-caret"></div>
+                                        </div>
+                                      </div>
+                                      <div class="ui-ol-submenu">
+                                        <ul class="ui-ol-submenu-list">
+                                          <li><a href="tour-grid.html">Tour Grid</a></li>
+                                          <li><a href="tour-grid-left-sidebar.html">Tour Grid (Sidebar Left)</a></li>
+                                          <li><a href="tour-grid-right-sidebar.html">Tour Grid (Sidebar Right)</a></li>
+                                        </ul>
+                                      </div>
+                                    </li>
+
+                                    <li class="ui-ol-submenu-wrap">
+                                      <div class="ui-ol-submenu-trigger">
+                                        <a href="#" class="ui-ol-submenu-link">Tour detail</a>
+                                        <div class="ui-ol-submenu-caret-wrap">
+                                          <div class="ui-ol-submenu-caret"></div>
+                                        </div>
+                                      </div>
+                                      <div class="ui-ol-submenu">
+                                        <ul class="ui-ol-submenu-list">
+                                          <li><a href="tour-detail.html">Tour Detail</a></li>
+                                          <li><a href="tour-detail-sidebar.html">Tour Detail(Sidebar)</a></li>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li><a href="tour-booking.html">Tour Booking</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+
+                              <li class="ui-ol-submenu-wrap">
+                                <div class="ui-ol-submenu-trigger">
+                                  <a href="#">Blogs</a>
+                                  <div class="ui-ol-submenu-caret-wrap">
+                                    <div class="ui-ol-submenu-caret"></div>
+                                  </div>
+                                </div>
+                                <div class="ui-ol-submenu">
+                                  <ul class="ui-ol-submenu-list">
+                                    <li><a href="blog-grid.html">Blog Grid</a></li>
+                                    <li><a href="blog-grid-left-sidebar.html">Blog Grid (Sidebar Left)</a></li>
+                                    <li><a href="blog-grid-right-sidebar.html">Blog Grid (Sidebar Right)</a></li>
+                                    <li><a href="blog-detail.html">Blog Detail</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+
+                              <li><a href="contact-us.html">Contact</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+
+                <div class="ui-header-tools">
+                  <a href="javascript:;" class="ui-header-tools-item search-toggler">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="signup.html" class="ui-header-tools-item">
+                    <i class="fa-regular fa-user"></i>
+                  </a>
+                </div>
+
+                <div class="ui-header-col">
+                  <div id="ui-ol-menu-toggle-btn-wrap">
+                    <div class="ui-ol-menu-toggle-btn-holder">
+                      <a href="#" class="ui-ol-menu-toggle-btn"><span></span></a>
+                    </div>
+                    <div class="ui-ol-menu-toggle-btn-text">
+                      <span class="text-menu h6 color-white" data-hover="OPEN">MENU</span>
+                      <span class="text-close h6">CLOSE</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <section class="hero-banner-1 banner-content-parallax" id="hero">
+            <div class="container-fluid">
+              <h1 class="title banner-caption-title ph-appear">SocialTivity</h1>
+              <div class="content">
+                <div class="text-center sub-title">
+                  <h3 class="font-sec color-white">Sen adım at planın hazır!</h3>
+                </div>
+                <form action="tour-grid.html">
+                  <div class="find-banner-row">
+                    <div class="form-group white-input">
+                      <select id="city-select" name="select" class="nice-select has-nice-select cus-form-control" tabindex="0">
+                        <option class="default-option" selected="selected" disabled="disabled">Manisa</option>
+                      </select>
+                    </div>
+                    <div class="form-group white-input">
+                      <select id="district-select" name="select" class="has-nice-select cus-form-control">
+                        <option class="default-option" selected="selected" disabled="disabled">Yunusemre</option>
+                      </select>
+                    </div>
+                    <div class="form-group white-input">
+                      <select name="select" class="has-nice-select cus-form-control" id="kategoriSelect">
+                        <option selected disabled>Kategori</option>
+                      </select>
+                    </div>
+                    <div class="ui-btn ui-btn-primary">
+                      <button type="submit" data-hover="FIND NOW">FIND NOW</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <img src="assets/media/banner/mask-layer.png" alt="" class="mask-layer mask-layer-desktop" />
+            <img src="assets/media/banner/tabmask.png" alt="" class="mask-layer mask-layer-tab" />
+            <img src="assets/media/banner/mobilemask.png" alt="" class="mask-layer mask-layer-phone" />
+          </section>
+
+          <div class="about-trigger-1" id="page-content">
+            <section class="about-features-1 about-1 position-relative z-2">
+              <div class="container-fluid">
+                <div class="all-content">
+                  <div class="row align-items-center">
+                    <div class="col-xl-6 col-md-7">
+                      <div class="text-block text-md-start text-center">
+                        <h3 class="mb-8 font-sec color-primary">Hakkında :</h3>
+                        <h2 class="mb-24">
+                          WHERE PASSION<br />
+                          MEETS ADVENTURE,<br />
+                          FUELING YOUR<br />
+                          WANDERLUST DESIRES
+                        </h2>
+                        <div class="ui-btn ui-btn-primary mx-auto ms-md-0">
+                          <a href="about.html" data-hover="LEARN MORE">LEARN MORE</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-5">
+                      <div class="images-area">
+                        <div class="images-block">
+                          <div class="about-img-card box-blur-bg v-1">
+                            <img src="assets/img/home/about/efesantikkent.jpg" alt="" class="b-radius-20" />
+                          </div>
+                          <div class="about-img-card box-blur-bg v-2">
+                            <img src="assets/img/home/about/kralkayamezarligi.jpg" alt="" class="b-radius-20" />
+                          </div>
+                          <div class="about-img-card box-blur-bg v-3">
+                            <img src="assets/img/home/about/sumelamanastiri.jpg" alt="" class="b-radius-20" />
+                          </div>
+                          <div class="about-img-card box-blur-bg v-4">
+                            <img src="assets/img/home/about/nemrutdagi.jpg" alt="" class="b-radius-20" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="position-relative z-2 py-64">
+              <div class="container-fluid">
+                <div class="heading mb-48">
+                  <h3 class="font-sec color-primary">Hareket Zamanı :</h3>
+                  <h2>Size En Yakın Yerler</h2>
+                </div>
+                <div class="row mb-16">
+                  <div class="col-xxl-3 col-lg-4 col-sm-6">
+                    <div class="tour-card mb-32">
+                      <img src="assets/img/home/location/efesantikkent.jpg" alt="" class="tour-img" />
+                      <a href="#" class="wishlist-icon"><i class="fa-light fa-heart"></i></a>
+                      <div class="card-info">
+                        <div class="card--title">
+                          <a href="tour-detail.html" class="h5">Efes Antik Kenti</a>
+                          <div class="location">
+                            <i class="fa-light fa-location-crosshairs"></i>
+                            <h6>Selçuk, İzmir, Türkiye</h6>
+                          </div>
+                        </div>
+                        <div class="info-detail">
+                          <div class="right-block">
+                            <a href="tour-detail.html" class="ui-link-arrow"><i class="fa-light fa-arrow-right arrow"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-4 col-sm-6">
+                    <div class="tour-card mb-32">
+                      <img src="assets/img/home/location/sumelamanastiri.jpg" alt="" class="tour-img" />
+                      <a href="#" class="wishlist-icon"><i class="fa-light fa-heart"></i></a>
+                      <div class="card-info">
+                        <a href="tour-detail.html" class="h5">Sümela Manastırı</a>
+                        <div class="location">
+                          <i class="fa-light fa-location-crosshairs"></i>
+                          <h6>Maçka, Trabzon, Türkiye</h6>
+                        </div>
+                        <div class="info-detail">
+                          <div class="right-block">
+                            <a href="tour-detail.html" class="ui-link-arrow"><i class="fa-light fa-arrow-right arrow"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-4 col-sm-6">
+                    <div class="tour-card mb-32">
+                      <img src="assets/img/home/location/kralinmezarlıgi.jpg" alt="" class="tour-img" />
+                      <a href="#" class="wishlist-icon"><i class="fa-light fa-heart"></i></a>
+                      <div class="card-info">
+                        <a href="tour-detail.html" class="h5">Pontus Kralları Kaya Mezarları</a>
+                        <div class="location">
+                          <i class="fa-light fa-location-crosshairs"></i>
+                          <h6>Hatuniye, Amasya, Türkiye</h6>
+                        </div>
+                        <div class="info-detail">
+                          <div class="right-block">
+                            <a href="tour-detail.html" class="ui-link-arrow"><i class="fa-light fa-arrow-right arrow"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-4 col-sm-6 d-xxl-block d-lg-none">
+                    <div class="tour-card mb-32">
+                      <img src="assets/img/home/location/manisa-2.jpg" alt="" class="tour-img" />
+                      <a href="#" class="wishlist-icon"><i class="fa-light fa-heart"></i></a>
+                      <div class="card-info">
+                        <a href="tour-detail.html" class="h5">Spil Dağı Milli Parkı</a>
+                        <div class="location">
+                          <i class="fa-light fa-location-crosshairs"></i>
+                          <h6>Manisa Merkez, Manisa, Türkiye</h6>
+                        </div>
+                        <div class="info-detail">
+                          <div class="right-block">
+                            <a href="tour-detail.html" class="ui-link-arrow"><i class="fa-light fa-arrow-right arrow"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <div class="ui-btn ui-btn-primary">
+                    <a href="about.html" data-hover="Daha Fazla">Daha Fazla</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="position-relative z-2 py-64">
+              <div class="container-fluid">
+                <div class="heading mb-48">
+                  <h3 class="font-sec color-primary">varış yerleri :</h3>
+                  <h2>EN İYİ SEYAHAT YERLERİ</h2>
+                </div>
+                <div class="row py-64 align-items-center">
+                  <div class="col-lg-5 order-lg-1 order-2">
+                    <h2 class="mb-8">Dolmabahçe Sarayı</h2>
+                    <p class="pe-sm-5">
+                      Dolmabahçe Sarayı'nın bugün bulunduğu alan, bundan dört yüzyıl öncesine kadar Osmanlı Kaptan-ı Derya'sının gemileri demirlediği, Boğaziçi'nin büyük bir koyu idi. Geleneksel denizcilik törenlerinin yapıldığı bu koy zamanla bir bataklık hâline geldi. 17. yüzyılda doldurulmaya
+                      başlanan koy, padişahların dinlenme ve eğlenceleri için düzenlenen bir "hasbahçe"ye (hadayik-hassâ) dönüştürüldü.
+                    </p>
+                  </div>
+                  <div class="col-lg-6 offset-lg-1 order-lg-2 order-1">
+                    <div class="box-blur-bg mb-16 mb-lg-0">
+                      <img src="assets/img/home/travel-destinations/dolma-bahce-sarayi.jpg" alt="" class="b-radius-20" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row py-64 align-items-center">
+                  <div class="col-lg-6">
+                    <div class="box-blur-bg mb-16 mb-lg-0">
+                      <img src="assets/img/home/travel-destinations/galata-kulesi.jpg" alt="" class="b-radius-20" />
+                    </div>
+                  </div>
+                  <div class="col-lg-5 offset-lg-1">
+                    <h2 class="mb-8">Galata Kulesi</h2>
+                    <p class="pe-sm-5">
+                      Bizans İmparatorluğu ile ittifak hâlinde olan Cenevizliler 1267'de, Haliç'in kuzeyinde bulunan Galata'da "Pera" adlı bir koloni kurmuş, bu koloninin hâkimiyet alanını da zaman içinde Bizans tarafından verilen izinlerle genişletmişti. Tepesindeki haçtan ötürü o dönem "Kutsal Haç
+                      Kulesi" (Turris Sancte Crucis) olarak adlandırılan kule, bu izinlere aykırı bir şekilde kuzeydoğu yönündeki tepeye doğru hâkimiyet alanı arttırılarak 1335-1349 yılları arasında bölgede yapılan tahkimatın bir parçası olarak inşa edildi.
+                    </p>
+                  </div>
+                </div>
+                <div class="row py-64 align-items-center">
+                  <div class="col-lg-5 order-lg-1 order-2">
+                    <h2 class="mb-8">Göbeklitepe</h2>
+                    <p class="pe-sm-5">
+                      Göbeklitepe, dünyanın şu ana kadar bilinen en eski tarihî yapısıdır. Bazı popüler kaynaklarda "tarihin sıfır noktası" nitelendirmesiyle de anılmaktadır. Yapıt, dünyanın bilinen en eski megalitleri olan taş sütunlarla, bir dizi büyük dairesel yapıdan oluşmaktadır. Çanak
+                      Çömleksiz Neolitik Çağ'a ait olduğu düşünülen bu yapıda T biçimindeki 10-12 dikilitaş yuvarlak planda dizilmiş, araları ise taş duvarlarla örülmüştür. Yapının merkezinde daha yüksek boyda olan iki dikilitaş, karşılıklı olarak yerleştirilmiştir. Bu dikilitaşların çoğu üzerinde
+                      insan, eller ve kollar, çeşitli hayvan ve soyut semboller, kabartılarak veya oyularak betimlenmiştir.
+                    </p>
+                  </div>
+                  <div class="col-lg-6 offset-lg-1 order-lg-2 order-1">
+                    <div class="box-blur-bg mb-16 mb-lg-0">
+                      <img src="assets/img/home/travel-destinations/gobekli-tepe.jpg" alt="" class="b-radius-20" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="position-relative z-2 py-64">
+              <div class="container-fluid">
+                <div class="box-blur-bg">
+                  <div class="discount-banner b-radius-20">
+                    <div class="row">
+                      <div class="col-lg-6 order-lg-1 order-2">
+                        <div class="img-block text-center">
+                          <img src="assets/media/banner/dicount-banner/main-object.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 order-lg-2 order-1">
+                        <div class="content">
+                          <div class="text-block">
+                            <div class="title-block">
+                              <div class="discount-tag">
+                                <h2 class="color-white">30%</h2>
+                                <h4 class="color-white">OFF</h4>
+                              </div>
+                              <h1 class="mb-16 color-white position-relative z-3">INTERESTED?</h1>
+                            </div>
+                            <h5 class="mb-16 color-primary">DISCOUNT IF YOU BOOK NOW</h5>
+                            <p class="mb-48 color-white">Lorem ipsum dolor sit amet consectetur. Aliquam in neque eleifend <br />placerat scelerisque tincidunt erat porttitor. Sed sed in suscipit <br />lorem. Ut felis velit tristique posuere tellus sed.</p>
+                            <div class="ui-btn ui-btn-primary">
+                              <a href="tour-booking.html" data-hover="GET IN TOUCH">GET IN TOUCH</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="py-64">
+              <div class="container-fluid">
+                <div class="heading mb-48">
+                  <h3 class="font-sec color-primary">blogs :</h3>
+                  <h2>READ EXCITING STORIES</h2>
+                </div>
+                <div class="blogs-slider">
+                  <div class="blog-card mb-32 box-blur-bg">
+                    <div class="content b-radius-20">
+                      <span class="date">12-Oct-2024</span>
+                      <img src="assets/media/blogs/blog_1.png" alt="" class="blog-img" />
+                      <div class="text-block">
+                        <a href="blog-detail.html" class="mb-16 h6">Blog title goes here</a>
+                        <p class="mb-40">Lorem ipsum dolor sit amet consectetur. Aliquam in neque eleifend placera...</p>
+                        <div class="bottom-row">
+                          <div class="author">
+                            <img src="assets/media/users/author.png" alt="" class="author-img" />
+                            <p>Julia Fernandez</p>
+                          </div>
+                          <a href="blog-detail.html" class="ui-link-arrow"><i class="fa-light fa-arrow-right arrow"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-card mb-32 box-blur-bg">
+                    <div class="content b-radius-20">
+                      <span class="date">12-Oct-2024</span>
+                      <img src="assets/media/blogs/blog_2.png" alt="" class="blog-img" />
+                      <div class="text-block">
+                        <a href="blog-detail.html" class="mb-16 h6">Blog title goes here</a>
+                        <p class="mb-40">Lorem ipsum dolor sit amet consectetur. Aliquam in neque eleifend placera...</p>
+                        <div class="bottom-row">
+                          <div class="author">
+                            <img src="assets/media/users/author.png" alt="" class="author-img" />
+                            <p>Julia Fernandez</p>
+                          </div>
+                          <a href="blog-detail.html" class="ui-link-arrow"><i class="fa-light fa-arrow-right arrow"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-card mb-32 box-blur-bg">
+                    <div class="content b-radius-20">
+                      <span class="date">12-Oct-2024</span>
+                      <img src="assets/media/blogs/blog_3.png" alt="" class="blog-img" />
+                      <div class="text-block">
+                        <a href="blog-detail.html" class="mb-16 h6">Blog title goes here</a>
+                        <p class="mb-40">Lorem ipsum dolor sit amet consectetur. Aliquam in neque eleifend placera...</p>
+                        <div class="bottom-row">
+                          <div class="author">
+                            <img src="assets/media/users/author.png" alt="" class="author-img" />
+                            <p>Julia Fernandez</p>
+                          </div>
+                          <a href="blog-detail.html" class="ui-link-arrow"><i class="fa-light fa-arrow-right arrow"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-card mb-32 box-blur-bg">
+                    <div class="content b-radius-20">
+                      <span class="date">12-Oct-2024</span>
+                      <img src="assets/media/blogs/blog_4.png" alt="" class="blog-img" />
+                      <div class="text-block">
+                        <a href="blog-detail.html" class="mb-16 h6">Blog title goes here</a>
+                        <p class="mb-40">Lorem ipsum dolor sit amet consectetur. Aliquam in neque eleifend placera...</p>
+                        <div class="bottom-row">
+                          <div class="author">
+                            <img src="assets/media/users/author.png" alt="" class="author-img" />
+                            <p>Julia Fernandez</p>
+                          </div>
+                          <a href="blog-detail.html" class="ui-link-arrow"><i class="fa-light fa-arrow-right arrow"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-card mb-32 box-blur-bg">
+                    <div class="content b-radius-20">
+                      <span class="date">12-Oct-2024</span>
+                      <img src="assets/media/blogs/blog_2.png" alt="" class="blog-img" />
+                      <div class="text-block">
+                        <a href="blog-detail.html" class="mb-16 h6">Blog title goes here</a>
+                        <p class="mb-40">Lorem ipsum dolor sit amet consectetur. Aliquam in neque eleifend placera...</p>
+                        <div class="bottom-row">
+                          <div class="author">
+                            <img src="assets/media/users/author.png" alt="" class="author-img" />
+                            <p>Julia Fernandez</p>
+                          </div>
+                          <a href="blog-detail.html" class="ui-link-arrow"><i class="fa-light fa-arrow-right arrow"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="py-64">
+              <div class="heading mb-48">
+                <h3 class="font-sec color-primary">instagram :</h3>
+                <h2>TRAVEL GALLERIES</h2>
+              </div>
+              <div class="gallery-slider">
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_1.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_2.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_3.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_4.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_5.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_6.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_1.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_2.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_3.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_4.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_5.png" alt="" /></a>
+                <a href="#" class="gallery-img-block"><img src="assets/media/gallery/gallery_6.png" alt="" /></a>
+              </div>
+            </section>
+          </div>
+
+          <footer class="pt-64 pb-40">
+            <div class="container-fluid">
+              <div class="box-blur-bg">
+                <div class="footer-content bg-white b-radius-20">
+                  <div class="features-row row">
+                    <div class="col-lg-3 col-6 feature-block">
+                      <img src="assets/media/icons/australia.png" alt="" />
+                      <h6>ÖZEL AKTİVİTELER</h6>
+                    </div>
+                    <div class="col-lg-3 col-6 feature-block">
+                      <img src="assets/media/icons/tour-guide.png" alt="" />
+                      <h6>EN İYİ KILAVUZLAR</h6>
+                    </div>
+                    <div class="col-lg-3 col-6 feature-block">
+                      <img src="assets/media/icons/bus.png" alt="" />
+                      <h6>ULAŞTIRMA SERVİSLERİ</h6>
+                    </div>
+                    <div class="col-lg-3 col-6 feature-block">
+                      <img src="assets/media/icons/online-chat.png" alt="" />
+                      <h6>RAKİPSİZ DESTEK</h6>
+                    </div>
+                  </div>
+                  <div class="footer-main py-64">
+                    <div class="row">
+                      <div class="col-xl-5 col-md-8">
+                        <a href="index.html" class="footer-logo mb-40">
+                          <img src="assets/media/footer-logo.png" alt="" />
+                        </a>
+                        <p class="mb-40 mb-xl-0">Ideal Office Furniture have been working in the commercial furniture market place for many years already and come with over 20 years of sales and design experience, so you will be in very good hands when doing business with us.</p>
+                      </div>
+                      <div class="col-xl-6 offset-xl-1">
+                        <div class="footer-right-content">
+                          <div class="footer-widgets mb-40 mb-xl-0">
+                            <div class="row">
+                              <div class="col-sm-4 col-6">
+                                <div class="widget mb-24">
+                                  <h6 class="mb-12">Sayfalar</h6>
+                                  <ul class="unstyled item-list">
+                                    <li><a href="about.html">Hakkımızda</a></li>
+                                    <li><a href="blog-grid.html">Blog</a></li>
+                                    <li><a href="contact-us.html">İletişim</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 col-6">
+                                <div class="widget mb-24">
+                                  <h6 class="mb-12">Kategoriler</h6>
+                                  <ul class="unstyled item-list">
+                                    <li><a href="tour-grid.html">Package</a></li>
+                                    <li><a href="tour-grid.html">Tours</a></li>
+                                    <li><a href="tour-grid.html">Honeymoon Plans</a></li>
+                                    <li><a href="tour-grid.html">Couple Trip</a></li>
+                                    <li><a href="tour-grid.html">Family Trips</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="widget mb-24">
+                                  <h6 class="mb-12">İletişim</h6>
+                                  <ul class="unstyled item-list">
+                                    <li><a href="tel:123456789">+90 (542) 235 80 13</a></li>
+                                    <li><a href="mailto:info@example.com">info@blunightyazilim.com.tr</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-bottom-row">
+                    <p>©2024 All Rights Reserved</p>
+                    <ul class="unstyled social-links">
+                      <li>
+                        <a href=""><img src="assets/media/icons/Instagram.png" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href=""><img src="assets/media/icons/Twitter.png" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href=""><img src="assets/media/icons/Facebook.png" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href=""><img src="assets/media/icons/Linkedin.png" alt="" /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <div class="search-popup">
+      <div class="search-popup__overlay search-toggler"></div>
+      <div class="search-popup__content text-center">
+        <form role="search" method="get" class="search-popup__form" action="shop-list-1.html">
+          <div class="blur-layer">
+            <input type="text" id="search" autocomplete="off" placeholder="Search Here..." />
+          </div>
+          <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/gsap.min.js"></script>
+    <script src="assets/js/vendor/scrollTrigger.min.js"></script>
+    <script src="assets/js/vendor/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/vendor/ScrollSmoother.min.js"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+    <script src="assets/js/vendor/ion.rangeSlider.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/ad5b8232d1.js" crossorigin="anonymous"></script>
+    <script src="path/to/jquery.js"></script>
+    <script src="path/to/jquery.nice-select.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#city-select").niceSelect();
+      });
+    </script>
+    <script src="assets/js/weather.js"></script>
+    <script src="assets/js/categories.js"></script>
+    <script src="assets/js/city-name.js"></script>
+  </body>
+</html>
